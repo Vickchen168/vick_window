@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+psycopg2-binary
+pydantic
+requests
+=======
+requests
+pydantic
+psycopg2-binary
+>>>>>>> 08a1747de4b5d6146317d2e4f8d7d11aa6b6f848
