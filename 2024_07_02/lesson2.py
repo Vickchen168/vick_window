@@ -2,7 +2,7 @@ import psycopg2
 import data
 import os
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv() 
 
 def main():    
     conn = psycopg2.connect(os.environ['POSTGRESQL_TOKEN'])
