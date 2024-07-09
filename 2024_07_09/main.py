@@ -17,4 +17,4 @@ def youbike():
 @app.route('/contact')
 def contact():
     # show the post with the given id, the id is an integer
-    return render_template('index.html.jinja')
+    return render_template('index.html.jinja') 
