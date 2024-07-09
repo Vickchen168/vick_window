@@ -1,20 +1,18 @@
-from flask import Flask
-from markupsafe import escape
+from flask import Flask,render_template
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "<h1>我的主題</h1>\n<h2>職能發展學院</h2>"
+    return render_template('index.html')
 
-@app.route("/hello")
+@app.route('/hello')
 def hello():
-    return "<h1>Hello World</h1>"
+    return '<h1>Hello, World</h1>'
 
 @app.route('/user/<username>')
 def show_user_profile(username):
-    # show the user profile for that user
-    return f'<h1>Hello! {username}</h1>'
+    return f"<h1>Hello! {username}</h1>"
 
 @app.route('/post/<int:post_id>')
 def show_post(post_id):
